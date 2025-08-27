@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            overflow-y: visible;
+        }
+
+        nav {
+            background-color: rgb(1, 0, 0);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            width: 100%;
+        }
+
+        .head ul {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .head ul a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .head ul a li {
+            border: 2px solid black;
+            padding: 5px 10px;
+            border-radius: 15px;
+            background-color: rgb(0, 0, 0);
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .head ul a:hover li {
+            background-color: rgb(39, 37, 37);
+        }
+
+        .logo img {
+            width: 70px;
+        }
+
+        .headerband {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgb(43, 43, 45);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .headerband ul {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .headerband ul a {
+            text-decoration: none;
+        }
+        .headerband ul a:hover li{
+            background-color: rgb(34, 37, 37);
+        }
+
+        .headerband ul a li {
+            padding: 5px 10px;
+            border: 1px solid rgb(43, 43, 45);
+            color: rgb(21, 188, 221);
+            font-weight: bold;
+            background-color: rgb(88, 88, 90);
+            border-radius: 15px;
+        }
+
+        .parent {
+            background-color: bisque;
+            padding: 20px;
+            padding-bottom: 100px;
+        }
+
+        .firstrowdiv {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 25px;
+        }
+
+        .box1,
+        .box2 {
+            border: 1px solid;
+            width: 500px;
+            height: 300px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px 5px rgb(56, 55, 55);
+        }
+
+        .box1 {
+            background-color: aquamarine;
+        }
+
+        .box2 {
+            background-color: aqua;
+            box-shadow: 5px 5px 15px 5px rgb(44, 48, 46);
+        }
+
+        .boxbelow {
+            border: 1px solid;
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            margin: 0 auto;
+            width: 700px;
+            height: 200px;
+            background-color: rgb(28, 57, 173);
+            box-shadow: 5px 5px 15px 5px rgb(52, 51, 51);
+        }
+
+        footer {
+            background-color: rgb(4, 4, 4);
+            color: rgb(254, 255, 255);
+            padding: 20px 0;
+        }
+
+        .foot {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .foot div {
+            border: 1px solid rgb(34, 32, 32);
+            width: 30%;
+            height: 200px;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: rgb(29, 28, 28);
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 40px;
+        }
+
+        .ffoot,.sfoot,.tfoot {
+            color: aliceblue;
+        }
+
+        .last {
+            text-align: center;
+            color: aliceblue;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="head">
+                <ul>
+                    <a href="/"><li>Home</li></a>
+                    <a href="/"><li>About</li></a>
+                    <a href="/"><li>Articles</li></a>
+                </ul>
+            </div>
+            <div class="logo">
+                <img width="70px" src="SBP-logo.png" alt="SBP.">
+            </div>
+        </nav>
+    </header>
+
+    <div class="headerband">
+        <ul>
+            <a href="/"><li>Action</li></a>
+            <a href="/"><li>Comedy</li></a>
+            <a href="/"><li>Romance</li></a>
+            <a href="/"><li>Horror</li></a>
+            <a href="/"><li>Adventure</li></a>
+            <a href="/"><li>Fantasy</li></a>
+        </ul>
+    </div>
+
+    <main>
+        <div class="parent">
+            <div class="firstrowdiv">
+                <div class="box1">box1</div>
+                <div class="box2">box2</div>
+            </div>
+            <div class="boxbelow">below box</div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="ffoot">SBP</div>
+            <div class="sfoot">About</div>
+            <div class="tfoot">Contact</div>
+        </div>
+        <div class="last">&copy; Copyright SBP || All Rights Reserved</div>
+    </footer>
+</body>
+</html>

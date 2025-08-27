@@ -1,2 +1,17 @@
-# Website-Structure
-This is a structure for a website which can be used for listing movies , anime, songs, etc.
+# 🌐 Style Website
+
+This project is a **website layout template** made using **HTML & CSS**.  
+It is designed as a structured page that can be adapted for multiple purposes such as showcasing **movies, anime, songs, blogs, or portfolio projects**.
+
+---
+
+## ✨ Features
+- **Navigation Bar** with Home, About, and Contact links.
+- **Logo Section** for branding.
+- **Sticky Header Band** with numbered/category links (always visible when scrolling).
+- **Main Content Area** with:
+  - Two side-by-side content boxes.
+  - A larger "below box" for additional information.
+- **Footer Section** with three columns (SBP, About, Contact) and copyright.
+
+---
